@@ -184,11 +184,7 @@ def game():
     matrix = []
     n = []
     count = 100
-    for i in range(0, 9 + 1):
-        n.append(str(i))
-    matrix.append(n)
-    n = []
-    for i in range(10, 99 + 1):
+    for i in range(0, 99 + 1):
         if i % 10 == 9:
             n.append(str(i))
             matrix.append(n)
