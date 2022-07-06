@@ -174,9 +174,10 @@ def player(m):
     cell = examination(m)
     for i in range(10):
         for j in range(10):
-            if m[i][j] == cell:
-                m[i][j] = 'X'
-                return m, cell
+            if m[i][j] != 'X' and m[i][j] != 'O':
+                if m[i][j] == cell or int(m[i][j]) == int(cell):
+                    m[i][j] = 'X'
+                    return m, cell
 
 
 def game():
